@@ -15,7 +15,11 @@ class Player(Turtle):
 
     def next_level(self):
         if self.ycor() > FINISH_LINE_Y:
-            self.goto(STARTING_POSITION)
+            return True
+        return None
+
+    def go_to_start(self):
+        self.goto(STARTING_POSITION)
 
 
     def go_up(self):

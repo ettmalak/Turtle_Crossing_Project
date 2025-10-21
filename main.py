@@ -31,7 +31,8 @@ while game_is_on:
     if turtle.next_level():
         for car in cars:
             car.increment_distance()
-    turtle.next_level()
+        scoreboard.level_up()
+        turtle.go_to_start()
 
 
 
